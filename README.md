@@ -1,5 +1,6 @@
 # leaflet-challenge
 This is the package for Module 15 chanllenge.
+
 # USGS Earthquake Data Visualization
 
 This project is a data visualization tool for earthquake data using Leaflet and D3.js. It utilizes earthquake data provided by the United States Geological Survey (USGS) to visualize earthquake events on a map, including their location, magnitude, and depth. The project also includes geographic data for tectonic plate boundaries to help users gain a better understanding of earthquake distribution.
@@ -16,9 +17,9 @@ To get started with this project, follow these steps:
 
 This earthquake data visualization tool includes the following features:
 
-- Plotting earthquake events from the past week on the map, using different colors and radii to represent magnitude and depth.
+- Plotting the latest and updated earthquake events on the map, using different radii and colors to represent magnitude and depth.
 
-- Displaying a legend to explain the meaning of earthquake event colors and depth.
+- Displaying a legend to explain the meaning of earthquake event depth in different colors.
 
 - Allowing users to switch between different basemap layers, including "Street Map" and "Satellite Map."
 
@@ -43,21 +44,11 @@ This project depends on the following libraries and technologies:
 
 ## Author
 
-- Author: [Your Name]
-- GitHub: [Your GitHub Link]
-
-## License
-
-This project is distributed under the MIT License. See the [LICENSE](LICENSE) file for detailed information.
-
-## Contributions
-
-Contributions and improvements to this project are welcome. If you find issues or have suggestions for improvements, please submit issues or pull requests on GitHub.
+- Author: Mu Li
+- Date: Oct 17, 2023
 
 ## Special Thanks
 
 - Thanks to the United States Geological Survey (USGS) for providing earthquake data.
 
 - Thanks to the Leaflet and D3.js communities for their powerful tools and documentation.
-
-This sample ReadMe provides an overview of your project and how to use it. You can add more details and explanations specific to your project's requirements and features.
