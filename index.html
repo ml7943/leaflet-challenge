@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>USGS Earthquake Data Visualization</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin="" />
+
+  <!-- Add your CSS for styling the map here -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+  <style>
+    /* Add your custom CSS styles here */
+    #map {
+      height: 600px;
+    }
+
+    #map-layer-control {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: white;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+
+    #map-layer-control label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map-layer-control">
+    <label for="earthquakes">Earthquakes</label>
+    <input type="checkbox" id="earthquakes" checked>
+    <label for="tectonicPlates">Tectonic Plates</label>
+    <input type="checkbox" id="tectonicPlates" checked>
+    <label for="baseMaps">Base Maps</label>
+    <select id="baseMaps">
+      <option value="streetMap">Street Map</option>
+      <option value="satelliteMap">Satellite Map</option>
+    </select>
+  </div>
+
+  <!-- The div that holds our map -->
+  <div id="map"></div>
+  
+  <div id="map-legend" class="legend">
+    <div class="legend-title"><strong>Depth (km) - Color</strong></div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #00FFFF;"></div>
+      <div class="legend-label">-10 to 10</div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #00FF00;"></div>
+      <div class="legend-label">10 to 30</div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #FFFF00;"></div>
+      <div class="legend-label">30 to 50</div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #FFA500;"></div>
+      <div class="legend-label">50 to 70</div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #FF4500;"></div>
+      <div class="legend-label">70 to 90</div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: #FF0000;"></div>
+      <div class="legend-label">90+</div>
+    </div>
+  </div>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+  <!-- D3 JavaScript -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- Add your JavaScript file for creating the map here -->
+  <script type="text/javascript" src="static/js/logic.js"></script>
+</body>
+
+</html>
