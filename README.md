@@ -13,6 +13,8 @@ To get started with this project, follow these steps:
 
 2. Open the `index.html` file in a web browser to view the earthquake data visualization.
 
+3. To get the detailed earthquake and technique plate information, please click the top right corner, to choose types of layers and inforamtion.
+
 ## Features
 
 This earthquake data visualization tool includes the following features:
